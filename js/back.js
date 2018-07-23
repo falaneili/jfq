@@ -42,6 +42,20 @@ $(function() {
   });
 }); 
 
+/*练兵备战动态*/
+$(document).ready(function() {
+  $('.training-ct:gt(0)').hide();
+  var hdw = $('.training-hd a');
+        //hdw.hover(function() {
+        //    $(this).addClass('current').siblings().removeClass('current');
+        //});
+        hdw.mouseover(function() {
+          $(this).addClass('current').siblings().removeClass();
+          var hdw_index = hdw.index(this);
+          $('.training-ct').eq(hdw.index(this)).show().siblings().hide();
+        });
+      });
+
 /*国防动员动态*/
  $(function() {
     $(".arouse-pic").flexslider({
@@ -50,6 +64,19 @@ $(function() {
     touch: true //是否支持触屏滑动
   });
 }); 
+
+$(document).ready(function() {
+  $('.arouse-ct:gt(0)').hide();
+  var hdw = $('.arouse-hd a');
+        //hdw.hover(function() {
+        //    $(this).addClass('current').siblings().removeClass('current');
+        //});
+        hdw.mouseover(function() {
+          $(this).addClass('current').siblings().removeClass();
+          var hdw_index = hdw.index(this);
+          $('.arouse-ct').eq(hdw.index(this)).show().siblings().hide();
+        });
+      });
 
 /*政工园地*/
 $(document).ready(function() {
@@ -104,6 +131,19 @@ jQuery(".special-content").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMa
 
  /*后勤保障*/
  jQuery(".hmain-3-right").slide({mainCell:".bd ul",autoPage:true,effect:"top",autoPlay:true,vis:8});
+
+ $(document).ready(function() {
+  $('.logistics-ct:gt(0)').hide();
+  var hdw = $('.logistics-hd a');
+        //hdw.hover(function() {
+        //    $(this).addClass('current').siblings().removeClass('current');
+        //});
+        hdw.mouseover(function() {
+          $(this).addClass('current').siblings().removeClass();
+          var hdw_index = hdw.index(this);
+          $('.logistics-ct').eq(hdw.index(this)).show().siblings().hide();
+        });
+      });
 
 //二级导航
 $(function(){ 
